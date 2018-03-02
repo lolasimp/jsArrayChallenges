@@ -33,9 +33,9 @@ for(var i = 0 ; i < spray2.length; i++){
 
 if(spray1score > spray2score){
     var print = document.getElementById('challenge1');
-    print.innerHTML = '<h2>Spray 1<h2>';
+    print.innerHTML = '<h2>Soul<h2>';
 }  else {
-    print.innerHTML = '<h2>Spray 2<h2>';
+    print.innerHTML = '<h2>Glow<h2>';
 }
 
 // spray1score = 67
