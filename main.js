@@ -33,9 +33,9 @@ for(var i = 0 ; i < spray2.length; i++){
 
 if(spray1score > spray2score){
     var print = document.getElementById('challenge1');
-    print.innerHTML = '<h2>spray1<h2>';
+    print.innerHTML = '<h2> Soul</h2>';
 }  else {
-    print.innerHTML = '<h2>spray2<h2>';
+    print.innerHTML = '<h2> Glow </h2>';
 }
 
 // spray1score = 67
@@ -84,3 +84,59 @@ print.innerHTML += '<br>' + planets3;
     // }
 
 // var plant3 = planets.indexOf(3, 7);
+
+
+// Challenge #3: Find the unique number
+// Given an array of more than 3 numbers where all numbers are equal except for one. Display the one unique number!
+
+var challengeA = [ 1, 1, 1, 2, 1, 1 ];  // 2
+var challengeB = [ 0, 0, 0, 0, 0, 0, 0, 0.55, 0, 0 ];  // 0.55
+
+var num1 = 2;
+var num2 = 0.55;
+
+
+
+var print = document.getElementById('challenge3');
+    print.innerHTML = challengeA[3] + ' and ' + challengeB[7];
+
+
+
+
+// var arrayName = 'challenge';
+// var number = window[arrayName][1];
+
+// Challenge #6: Number Zoo Patrol
+// You're working in a number zoo, and it seems that one of the numbers has gone missing! Given an array of numbers. The numbers will be unsorted values between 1 and one more than the length of the array. No values will be repeated within the array. displaythe number that is missing.
+
+// Examples:
+
+
+
+var test1 = [1,3]; // 2
+var test2 = [2,3,4]; // 1
+var test3 = [13,11,10,3,2,1,4,5,6,9,7,8]; // 12
+var test4 = [1,2,3,4]; // 5
+
+// n(n+1)/2
+
+function mathStuffs(testArray){
+    var correctArrayLength = (testArray.length) + 1;
+    var currectSum = (correctArrayLength * (correctArrayLength + 1)) / 2;
+   
+    var testArraySum = 0;
+    for(var i = 0; i < testArray.length; i++){
+        testArraySum += testArray[i];
+    }
+
+    var missingNumber = currectSum - testArraySum;
+    var printDiv = document.getElementById('challenge6');
+    printDiv.innerHTML += "<h1>The missing number is: " + missingNumber + "</h1>"
+}
+
+mathStuffs(test1);
+mathStuffs(test2);
+mathStuffs(test3);
+mathStuffs(test4);
+
+
